@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do Seu Estúdio - Arte na Pele</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="sass/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__logo">
+                <a href="#">Seu Estúdio Tattoo</a>
+            </h1>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#artistas">Artistas</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="header__menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h2>Transforme Sua Ideia em Arte na Pele</h2>
+                    <p>Conheça nossos artistas e descubra o que podemos criar juntos. Tatuagens personalizadas,
+                        qualidade e segurança garantidas.</p>
+                    <a href="#contato" class="btn btn--primary">Agende Sua Consulta</a>
+                    <a href="#galeria" class="btn btn--secondary">Veja Nosso Portfólio</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="gallery section-padding">
+            <div class="container">
+                <h2 class="section-title">Nossa Arte</h2>
+                <p class="section-subtitle">Inspire-se com alguns de nossos trabalhos mais recentes.</p>
+                <div class="gallery__grid">
+                    <div class="gallery__item">
+                        <img src="img/tatto.jpg" alt="Tatuagem Realista">
+                        <div class="gallery__overlay">
+                            <h3>Realismo</h3>
+                            <p>Detalhes impressionantes.</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/tatto.jpg" alt="Tatuagem Old School">
+                        <div class="gallery__overlay">
+                            <h3>Old School</h3>
+                            <p>Clássicos atemporais.</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/tatto.jpg" alt="Tatuagem Fineline">
+                        <div class="gallery__overlay">
+                            <h3>Fineline</h3>
+                            <p>Delicadeza e precisão.</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/tatto.jpg" alt="Tatuagem Blackwork">
+                        <div class="gallery__overlay">
+                            <h3>Blackwork</h3>
+                            <p>Pura expressão.</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/tatto.jpg" alt="Tatuagem Japonesa">
+                        <div class="gallery__overlay">
+                            <h3>Japonesa</h3>
+                            <p>Tradição e simbolismo.</p>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/tatto.jpg" alt="Tatuagem Abstrata">
+                        <div class="gallery__overlay">
+                            <h3>Abstrato</h3>
+                            <p>Liberdade criativa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn--secondary">Ver Mais Tatuagens</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="artistas" class="artists section-padding bg-dark">
+            <div class="container">
+                <h2 class="section-title">Nossos Artistas</h2>
+                <p class="section-subtitle">Conheça os talentos por trás das agulhas.</p>
+                <div class="artists__grid">
+                    <div class="artist-card">
+                        <img src="img/tattuador.jpeg" alt="Nome do Artista 1">
+                        <h3>Nome do Artista 1</h3>
+                        <p>Especialidade: Realismo, Preto e Cinza</p>
+                        <a href="#" class="btn btn--small">Ver Portfólio</a>
+                    </div>
+                    <div class="artist-card">
+                        <img src="img/tattuador.jpeg" alt="Nome do Artista 2">
+                        <h3>Nome do Artista 2</h3>
+                        <p>Especialidade: Fineline, Aquarela</p>
+                        <a href="#" class="btn btn--small">Ver Portfólio</a>
+                    </div>
+                    <div class="artist-card">
+                        <img src="img/tattuador.jpeg" alt="Nome do Artista 3">
+                        <h3>Nome do Artista 3</h3>
+                        <p>Especialidade: Tradicional, Neo Tradicional</p>
+                        <a href="#" class="btn btn--small">Ver Portfólio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="services section-padding">
+            <div class="container">
+                <h2 class="section-title">O que Oferecemos</h2>
+                <p class="section-subtitle">Qualidade, higiene e criatividade em cada projeto.</p>
+                <div class="services__list">
+                    <div class="service-item">
+                        <i class="icon-tattoo-design"></i>
+                        <h3>Tatuagens Personalizadas</h3>
+                        <p>Criamos designs únicos que contam a sua história.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="icon-cover-up"></i>
+                        <h3>Coberturas e Reformas</h3>
+                        <p>Transformamos tatuagens antigas ou indesejadas.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="icon-piercing"></i>
+                        <h3>Body Piercing</h3>
+                        <p>Perfurações com segurança e variedade de joias.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="icon-consultancy"></i>
+                        <h3>Consultoria de Design</h3>
+                        <p>Orientação especializada para sua ideia de tattoo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="testimonials section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">O que Dizem Nossos Clientes</h2>
+                <div class="testimonials__carousel">
+                    <div class="testimonial-card">
+                        <p>"Experiência incrível! O tatuador entendeu exatamente o que eu queria e o resultado superou
+                            minhas expectativas. Recomendo muito!"</p>
+                        <h4>- Ana Clara S.</h4>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Profissionais super atenciosos e o ambiente é impecável. Minha nova tattoo ficou perfeita!"
+                        </p>
+                        <h4>- João Pedro M.</h4>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Fiz uma cobertura e não poderia estar mais feliz. Trabalho de mestre!"</p>
+                        <h4>- Carolina L.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact section-padding">
+            <div class="container">
+                <h2 class="section-title">Fale Conosco</h2>
+                <p class="section-subtitle">Pronto para criar sua próxima obra de arte?</p>
+                <div class="contact__content">
+                    <div class="contact__form-wrapper">
+                        <form class="contact__form" action="https://formspree.io/f/janpierry2024@gmail.com" method="POST">
+                            <input type="text" name="name" placeholder="Seu Nome" required>
+                            <input type="email" name="_replyto" placeholder="Seu E-mail" required> <input type="tel"
+                                name="phone" placeholder="Seu Telefone (Opcional)">
+                            <textarea name="message" placeholder="Sua Mensagem / Descreva Sua Ideia" rows="5"
+                                required></textarea>
+                            <button type="submit" class="btn btn--primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                    <div class="contact__info">
+                        <h3>Localização e Horário</h3>
+                        <p>Rua Exemplo, - Centro, São Paulo - SP</p>
+                        <p>(11) 98765-4321</p>
+                        <p>(11) 98765-4321 (WhatsApp)</p>
+                        <p>Seg - Sex: 10h às 19h | Sáb: 10h às 16h</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt="Instagram"
+                                    width="45px"></a>
+                            <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt="fecebook"
+                                    width="45px"></a>
+                            <a href="#" aria-label="WhatsApp"><img src="img/whatsapp.png" alt="whatsapp"
+                                    width="45px"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.4371728399557!2d-46.65780278447814!3d-23.55051918468759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a7a6c9d749%3A0xa549f4c3c3a3b0a7!2sRua%20Augusta%2C%202690%20-%20Jardins%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001412-100!5e0!3m2!1spt-BR!2sbr!4v1678912345678!5m2!1spt-BR!2sbr"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Janpierry Santana. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script/index.js"></script>
+</body>
+
+</html>
