@@ -26,7 +26,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 a:hover {
-  color: #487fff;
+  color: #FFD700;
 }
 
 ul {
@@ -55,7 +55,7 @@ img {
   font-weight: 700;
   line-height: 1.2;
   font-size: 3rem;
-  color: #487fff;
+  color: #FFD700;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -87,7 +87,7 @@ img {
 }
 
 .bg-light {
-  background-color: #cccccc;
+  background-color: #8c8c8c;
   color: #333333;
 }
 
@@ -105,7 +105,7 @@ img {
 [class^=icon-] {
   display: inline-block;
   font-size: 2.5rem;
-  color: #487fff;
+  color: #FFD700;
   margin-bottom: 1rem;
 }
 
@@ -122,28 +122,30 @@ img {
   transition: all 0.3s ease-in-out;
 }
 .btn--primary {
-  background-color: #487fff;
+  background-color: #FFD700;
   color: #ffffff;
-  border: 2px solid #487fff;
+  border: 2px solid #FFD700;
+  text-shadow: 1px 1px 2px #000;
 }
 .btn--primary:hover {
-  background-color: #155bff;
-  border-color: #155bff;
+  background-color: #ccac00;
+  border-color: #ccac00;
   transform: translateY(-3px);
 }
 .btn--secondary {
   background-color: transparent;
-  color: #487fff;
-  border: 2px solid #487fff;
+  color: #FFD700;
+  border: 2px solid #FFD700;
 }
 .btn--secondary:hover {
-  background-color: #487fff;
+  background-color: #FFD700;
   color: #1a1a1a;
   transform: translateY(-3px);
 }
 .btn--small {
   padding: 0.5rem 1.2rem;
   font-size: 0.8rem;
+  text-decoration: underline;
 }
 
 .contact__form {
@@ -169,8 +171,8 @@ img {
 .contact__form input[type=email]:focus,
 .contact__form input[type=tel]:focus,
 .contact__form textarea:focus {
-  border-color: #487fff;
-  box-shadow: 0 0 0 3px rgba(72, 127, 255, 0.3);
+  border-color: #FFD700;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3);
 }
 .contact__form input[type=text]::-moz-placeholder, .contact__form input[type=email]::-moz-placeholder, .contact__form input[type=tel]::-moz-placeholder, .contact__form textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5);
@@ -187,6 +189,15 @@ img {
 }
 .contact__form .btn--primary {
   align-self: flex-start;
+}
+
+.titulo_galery {
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFD700;
+  font-family: "Oswald", sans-serif;
 }
 
 .gallery__item {
@@ -209,32 +220,50 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  opacity: 0;
+  overflow: hidden;
   transition: all 0.3s ease-in-out;
   color: #ffffff;
   padding: 1.5rem;
   box-sizing: border-box;
-}
-.gallery__item .gallery__overlay h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  transform: translateY(100%);
+  opacity: 0;
 }
 .gallery__item .gallery__overlay p {
   font-size: 1rem;
   opacity: 0.9;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.2s;
+  font-weight: 700;
+}
+.gallery__item .gallery__overlay .hover-hint {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
 }
 .gallery__item:hover img {
   transform: scale(1.05);
   filter: brightness(0.7);
 }
 .gallery__item:hover .gallery__overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+.gallery__item:hover .gallery__overlay h3,
+.gallery__item:hover .gallery__overlay p,
+.gallery__item:hover .gallery__overlay .hover-hint {
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -257,7 +286,7 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 auto 1.5rem;
-  border: 3px solid #487fff;
+  border: 3px solid #FFD700;
 }
 .artist-card h3 {
   font-family: "Oswald", sans-serif;
@@ -266,7 +295,7 @@ img {
   line-height: 1.2;
   font-size: 1.7rem;
   margin-bottom: 0.5rem;
-  color: #487fff;
+  color: #FFD700;
 }
 .artist-card p {
   font-size: 1rem;
@@ -292,7 +321,12 @@ img {
 .testimonial-card h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #487fff;
+  color: #FFD700;
+}
+.testimonial-card .estrelas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .header {
@@ -318,10 +352,10 @@ img {
   font-size: 2rem;
 }
 .header__logo a {
-  color: #487fff;
+  color: #FFD700;
 }
 .header__logo a:hover {
-  color: #7ba3ff;
+  color: #ffdf33;
 }
 .header__nav ul {
   display: flex;
@@ -329,41 +363,28 @@ img {
 }
 @media (max-width: 768px) {
   .header__nav ul {
-    display: none;
     flex-direction: column;
     background-color: #1a1a1a;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 1.5rem;
+    padding: 0 1.5rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s;
+    overflow: hidden;
   }
   .header__nav ul.is-open {
-    display: flex;
+    max-height: 300px;
+    opacity: 1;
+    visibility: visible;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
-}
-.header__nav a {
-  font-family: "Oswald", sans-serif;
-  font-size: 1.1rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  padding: 0.5rem 0;
-  position: relative;
-}
-.header__nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #487fff;
-  transition: all 0.3s ease-in-out;
-}
-.header__nav a:hover::after {
-  width: 100%;
 }
 .header__menu-toggle {
   display: none;
@@ -433,7 +454,7 @@ img {
   font-weight: 700;
   line-height: 1.2;
   font-size: 4.5rem;
-  color: #487fff;
+  color: #FFD700;
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
@@ -459,10 +480,7 @@ img {
   }
 }
 .hero__content .btn {
-  margin: 0 1rem;
-}
-.hero__content .btn:first-of-type {
-  margin-right: 2rem;
+  margin: 0 15px;
 }
 @media (max-width: 576px) {
   .hero__content .btn {
@@ -535,7 +553,7 @@ img {
   font-weight: 700;
   line-height: 1.2;
   font-size: 1.5rem;
-  color: #487fff;
+  color: #FFD700;
   margin-bottom: 0.8rem;
 }
 .services .service-item p {
@@ -578,7 +596,7 @@ img {
   font-weight: 700;
   line-height: 1.2;
   font-size: 2rem;
-  color: #487fff;
+  color: #FFD700;
   margin-bottom: 1.5rem;
 }
 .contact__info p {
@@ -591,8 +609,8 @@ img {
   color: #FFD700;
 }
 .contact .social-links {
-  width: 60%;
-  margin: 1.5rem auto;
+  width: 100%;
+  margin: 2rem auto;
   display: flex;
 }
 .contact .social-links a {
@@ -602,8 +620,11 @@ img {
   margin-right: 1.5rem;
 }
 .contact .social-links a:hover {
-  color: #487fff;
+  color: #FFD700;
   transform: translateY(-3px);
+}
+.contact .social-links img {
+  min-width: 55px;
 }
 .contact .map-placeholder {
   margin-top: 3rem;
